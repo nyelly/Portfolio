@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio - Fllavyo Nyellyson</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Portfólio</h1>
+      <label class="switch">
+        <input type="checkbox" onclick="toggleDarkMode()" />
+        <span class="slider"></span>
+      </label>
+    </div>
+  </header>
+
+  <section class="intro">
+    <div class="text">
+      <h2>Olá, eu sou o</h2>
+      <h1>Fllavyo Nyellyson :)</h1>
+      <p>Estudante de ADS e Desenvolvedor em formação</p>
+      <div class="buttons">
+        <a href="#" class="btn">Download CV</a>
+        <a href="#contato" class="btn-outline">Entrar em contato</a>
+      </div>
+    </div>
+    <img src="assets/perfil.png" alt="Foto de Fllavyo" class="foto-perfil" />
+  </section>
+
+  <section class="sobre">
+    <h2>Sobre mim</h2>
+    <p>Tenho 19 anos, sou estudante de Análise e Desenvolvimento de Sistemas e formado como técnico em Informática. Estou sempre me desenvolvendo com foco em desenvolvimento web e estudo de inglês.</p>
+  </section>
+
+  <section class="habilidades">
+    <h2>Habilidades</h2>
+    <div class="skills-grid">
+        <div class="skill"> HTML5</div>
+      <div class="skill">CSS3</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">C#</div>
+      <div class="skill">Python</div>
+      <div class="skill">MySQL</div>
+      <div class="skill">Git</div>
+    </div>
+  </section>
+
+  <section class="projetos">
+    <h2>Projetos em Destaque</h2>
+    <div class="projetos-grid">
+      <div class="projeto-card">
+        <img src="assets/movie-guide.png" alt="The Movie Guide" />
+        <h3>The Movie Guide</h3>
+        <p>App para explorar filmes com React e API TMDB.</p>
+      </div>
+      <div class="projeto-card">
+        <img src="assets/weather-app.png" alt="Daily Weather" />
+        <h3>Daily Weather</h3>
+        <p>Previsão do tempo com integração de API meteorológica.</p>
+      </div>
+      <div class="projeto-card">
+        <img src="assets/calculadora.png" alt="Calculadora Windows" />
+        <h3>Calculadora Windows</h3>
+        <p>Clone da calculadora do Windows com layout moderno.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contato">
+    <p>Entre em contato: fllavyo@email.com</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

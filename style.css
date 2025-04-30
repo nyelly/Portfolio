@@ -1,0 +1,172 @@
+:root {
+    --bg-color: #0f0f1b;
+    --text-color: #ffffff;
+    --accent-color: #8b5cf6;
+    --secondary-color: #181828;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  header {
+    background-color: var(--secondary-color);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+  }
+  
+  .switch input { display: none; }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #444;
+    border-radius: 24px;
+    transition: 0.4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--accent-color);
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    background-color: var(--bg-color);
+  }
+  
+  .intro .text {
+    max-width: 60%;
+  }
+  
+  .intro h1 {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+  }
+  
+  .btn, .btn-outline {
+    padding: 0.6rem 1.2rem;
+    margin: 0.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .btn {
+    background-color: var(--accent-color);
+    color: white;
+  }
+  
+  .btn-outline {
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+  }
+  
+  .foto-perfil {
+    width: 220px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #8b5cf6, transparent);
+  }
+  
+  .sobre, .habilidades {
+    padding: 3rem 2rem;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .skill {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    border-bottom: 2px solid var(--accent-color);
+  }
+  
+  footer {
+    background: #181818;
+    text-align: center;
+    padding: 1.5rem;
+    color: #ccc;
+  }
+
+  .projetos {
+    padding: 3rem 2rem;
+    background-color: var(--secondary-color);
+  }
+  
+  .projetos h2 {
+    text-align: center;
+    color: var(--accent-color);
+    margin-bottom: 2rem;
+  }
+  
+  .projetos-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  
+  .projeto-card {
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .projeto-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .projeto-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  
+  .projeto-card h3 {
+    margin: 1rem;
+    color: var(--accent-color);
+  }
+  
+  .projeto-card p {
+    margin: 0 1rem 1rem;
+    color: #ccc;
+    font-size: 0.9rem;
+  }
